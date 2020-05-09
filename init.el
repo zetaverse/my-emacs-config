@@ -81,6 +81,7 @@ There are two things you can do about this warning:
 (setq org-blank-before-new-entry (quote ((heading)
                                          (plain-list-item . auto))))
 (setq org-insert-heading-respect-content nil)
+(add-hook 'org-mode-hook (lambda () (org-autolist-mode)))
 
 ;; line wrap set to visual
 (global-visual-line-mode t)
